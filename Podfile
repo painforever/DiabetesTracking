@@ -1,5 +1,5 @@
-platform :ios, "7.0"
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
 
-pod "SocketRocket"
-pod "AFNetworking", "~> 2.0"
-pod 'IQKeyboardManager'
+pod 'Alamofire', '~> 3.0'
