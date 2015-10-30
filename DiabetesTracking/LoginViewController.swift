@@ -14,7 +14,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var remember_me: UISwitch!
+    var signViewController:UIViewController!
     @IBAction func signupButtonAction(sender: AnyObject) {
+        self.signViewController = self.storyboard?.instantiateViewControllerWithIdentifier("SignupViewController")
+        self.presentViewController(self.signViewController!, animated: true, completion: nil)
     }
     @IBAction func signinButtonAction(sender: AnyObject) {
         var uiTabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController

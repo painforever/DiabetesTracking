@@ -15,6 +15,7 @@
 		CF9F00B31BE2AB9600880D5E /* login_wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */; };
 		CFFF186C1BE407FD0009889B /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFFF186B1BE407FD0009889B /* home.jpg */; };
 		CFFF186E1BE408230009889B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF186D1BE408230009889B /* LoginViewController.swift */; };
+		CFFF18701BE40C3D0009889B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF186F1BE40C3D0009889B /* SignupViewController.swift */; };
 		F213796FF1DA049DFC15C419 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E6C7C465E3819C41AC8F15 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login_wallpaper.jpg; path = Images/login_wallpaper.jpg; sourceTree = "<group>"; };
 		CFFF186B1BE407FD0009889B /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home.jpg; path = Images/home.jpg; sourceTree = "<group>"; };
 		CFFF186D1BE408230009889B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CFFF186F1BE40C3D0009889B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		D6EB677E82D0CD9836BC8DC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				CFFF186D1BE408230009889B /* LoginViewController.swift */,
+				CFFF186F1BE40C3D0009889B /* SignupViewController.swift */,
 			);
 			name = BeforeLogin;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFF18701BE40C3D0009889B /* SignupViewController.swift in Sources */,
 				CFFF186E1BE408230009889B /* LoginViewController.swift in Sources */,
 				CF9F009E1BE2A9E000880D5E /* AppDelegate.swift in Sources */,
 			);
