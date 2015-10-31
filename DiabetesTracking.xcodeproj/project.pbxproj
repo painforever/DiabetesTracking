@@ -13,6 +13,8 @@
 		CF9F00A81BE2A9E000880D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00A61BE2A9E000880D5E /* LaunchScreen.storyboard */; };
 		CF9F00B01BE2AA1F00880D5E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00AF1BE2AA1F00880D5E /* Podfile */; };
 		CF9F00B31BE2AB9600880D5E /* login_wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */; };
+		CFFCE3391BE5088700285320 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3371BE5088700285320 /* envelope.png */; };
+		CFFCE33A1BE5088700285320 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3381BE5088700285320 /* settings.png */; };
 		CFFF186C1BE407FD0009889B /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFFF186B1BE407FD0009889B /* home.jpg */; };
 		CFFF186E1BE408230009889B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF186D1BE408230009889B /* LoginViewController.swift */; };
 		CFFF18701BE40C3D0009889B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF186F1BE40C3D0009889B /* SignupViewController.swift */; };
@@ -31,6 +33,8 @@
 		CF9F00A91BE2A9E000880D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9F00AF1BE2AA1F00880D5E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login_wallpaper.jpg; path = Images/login_wallpaper.jpg; sourceTree = "<group>"; };
+		CFFCE3371BE5088700285320 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envelope.png; path = Images/leftViewIcons/envelope.png; sourceTree = "<group>"; };
+		CFFCE3381BE5088700285320 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Images/leftViewIcons/settings.png; sourceTree = "<group>"; };
 		CFFF186B1BE407FD0009889B /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home.jpg; path = Images/home.jpg; sourceTree = "<group>"; };
 		CFFF186D1BE408230009889B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CFFF186F1BE40C3D0009889B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		CF9F00B11BE2AB7F00880D5E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CFFCE3371BE5088700285320 /* envelope.png */,
+				CFFCE3381BE5088700285320 /* settings.png */,
 				CFFF186B1BE407FD0009889B /* home.jpg */,
 				CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */,
 			);
@@ -212,11 +218,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFFCE33A1BE5088700285320 /* settings.png in Resources */,
 				CF9F00B31BE2AB9600880D5E /* login_wallpaper.jpg in Resources */,
 				CF9F00A81BE2A9E000880D5E /* LaunchScreen.storyboard in Resources */,
 				CF9F00A51BE2A9E000880D5E /* Assets.xcassets in Resources */,
 				CF9F00B01BE2AA1F00880D5E /* Podfile in Resources */,
 				CFFF186C1BE407FD0009889B /* home.jpg in Resources */,
+				CFFCE3391BE5088700285320 /* envelope.png in Resources */,
 				CF9F00A31BE2A9E000880D5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

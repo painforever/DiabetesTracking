@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.initControls()
         // Do any additional setup after loading the view.
     }
 
@@ -35,6 +35,10 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func initControls(){
+        self.email.leftView = self.setLeftViewForTextfields("envelope.png", containerScale: 50, imageIconScale: 24, textField: self.email)
+        self.password.leftView = self.setLeftViewForTextfields("settings.png", containerScale: 50, imageIconScale: 24, textField: self.password)
+    }
 
     /*
     // MARK: - Navigation
