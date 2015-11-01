@@ -10,7 +10,7 @@
 import UIKit
 import Foundation
 
-extension UIViewController {
+extension UIViewController: UITextFieldDelegate, UIPickerViewDelegate {
     func showAlert(title: String, message: String) {
         let alert = UIAlertView()
         alert.title = title
@@ -77,5 +77,39 @@ extension UIViewController {
         container.addSubview(iconImage)
         textField.leftViewMode = UITextFieldViewMode.Always;
         return container;
+    }
+    
+    func getUIViewByTagFromArray(tag: Int, views: Array<UIView>) -> UIView? {
+        for view in views{
+            if view.tag == tag {
+                return view;
+            }
+        }
+        return nil;
+    }
+    
+    func buildCustomPickerView(var pickerView: UIPickerView,  textField: UITextField, doneButton: UIBarButtonItem ) {
+        pickerView = UIPickerView(frame: CGRectMake(0, 43, 320, 480))
+        //warning, since ini Swift we must implement all the protocol methods in some protocols, like here 
+        //pickerView's dataSource, we need to declare its dataSource outside.
+        //pickerView.dataSource = self
+        pickerView.delegate = self
+        pickerView.showsSelectionIndicator = true
+        
+        textField.inputView = pickerView
+        
+        let pickerToolBar = UIToolbar(frame: CGRectMake(0,0,320,56))
+        pickerToolBar.barStyle = UIBarStyle.BlackOpaque
+        pickerToolBar.sizeToFit()
+        var barItems:Array<UIBarButtonItem> = [UIBarButtonItem]()
+        let flexSpace: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: self, action: nil)
+        barItems.append(flexSpace)
+        barItems.append(doneButton)
+        pickerToolBar.setItems(barItems, animated: true)
+        textField.inputAccessoryView = pickerToolBar
+    }
+    
+    func redirectTo(view: UIViewController) {
+        self.navigationController?.pushViewController(view, animated: true)
     }
 }

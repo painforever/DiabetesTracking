@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF14863A1BE6841B00E92097 /* condition_report.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF1486351BE6841B00E92097 /* condition_report.jpg */; };
+		CF14863B1BE6841B00E92097 /* diagnosis.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1486361BE6841B00E92097 /* diagnosis.png */; };
+		CF14863C1BE6841B00E92097 /* diet_report.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1486371BE6841B00E92097 /* diet_report.png */; };
+		CF14863D1BE6841B00E92097 /* lab_results.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF1486381BE6841B00E92097 /* lab_results.jpeg */; };
+		CF14863E1BE6841B00E92097 /* treatment.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF1486391BE6841B00E92097 /* treatment.jpg */; };
+		CF1486441BE687B700E92097 /* medications.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF1486431BE687B700E92097 /* medications.jpg */; };
+		CF1486471BE6894C00E92097 /* home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1486451BE6894C00E92097 /* home-32.png */; };
+		CF1486481BE6894C00E92097 /* user_shield_filled-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1486461BE6894C00E92097 /* user_shield_filled-32.png */; };
+		CF14864A1BE68A8E00E92097 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1486491BE68A8E00E92097 /* HomeViewController.swift */; };
+		CF14864D1BE692BA00E92097 /* LabResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF14864C1BE692BA00E92097 /* LabResultTableViewController.swift */; };
+		CF14864F1BE6938E00E92097 /* ConditionReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF14864E1BE6938E00E92097 /* ConditionReportTableViewController.swift */; };
+		CF1486511BE693A300E92097 /* DietReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1486501BE693A300E92097 /* DietReportTableViewController.swift */; };
+		CF1486531BE693B500E92097 /* DiagnosisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1486521BE693B500E92097 /* DiagnosisTableViewController.swift */; };
+		CF1486551BE693CB00E92097 /* TreatmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1486541BE693CB00E92097 /* TreatmentTableViewController.swift */; };
+		CF1486571BE693D900E92097 /* MedicationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1486561BE693D900E92097 /* MedicationsTableViewController.swift */; };
 		CF9F009E1BE2A9E000880D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F009D1BE2A9E000880D5E /* AppDelegate.swift */; };
 		CF9F00A31BE2A9E000880D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00A11BE2A9E000880D5E /* Main.storyboard */; };
 		CF9F00A51BE2A9E000880D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00A41BE2A9E000880D5E /* Assets.xcassets */; };
@@ -25,6 +40,21 @@
 /* Begin PBXFileReference section */
 		46E6C7C465E3819C41AC8F15 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73162DC1405246BB246F610A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CF1486351BE6841B00E92097 /* condition_report.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = condition_report.jpg; path = Images/condition_report.jpg; sourceTree = "<group>"; };
+		CF1486361BE6841B00E92097 /* diagnosis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diagnosis.png; path = Images/diagnosis.png; sourceTree = "<group>"; };
+		CF1486371BE6841B00E92097 /* diet_report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diet_report.png; path = Images/diet_report.png; sourceTree = "<group>"; };
+		CF1486381BE6841B00E92097 /* lab_results.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lab_results.jpeg; path = Images/lab_results.jpeg; sourceTree = "<group>"; };
+		CF1486391BE6841B00E92097 /* treatment.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = treatment.jpg; path = Images/treatment.jpg; sourceTree = "<group>"; };
+		CF1486431BE687B700E92097 /* medications.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = medications.jpg; path = Images/medications.jpg; sourceTree = "<group>"; };
+		CF1486451BE6894C00E92097 /* home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-32.png"; path = "Images/tab_icons/home-32.png"; sourceTree = "<group>"; };
+		CF1486461BE6894C00E92097 /* user_shield_filled-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "user_shield_filled-32.png"; path = "Images/tab_icons/user_shield_filled-32.png"; sourceTree = "<group>"; };
+		CF1486491BE68A8E00E92097 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CF14864C1BE692BA00E92097 /* LabResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabResultTableViewController.swift; sourceTree = "<group>"; };
+		CF14864E1BE6938E00E92097 /* ConditionReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionReportTableViewController.swift; sourceTree = "<group>"; };
+		CF1486501BE693A300E92097 /* DietReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietReportTableViewController.swift; sourceTree = "<group>"; };
+		CF1486521BE693B500E92097 /* DiagnosisTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosisTableViewController.swift; sourceTree = "<group>"; };
+		CF1486541BE693CB00E92097 /* TreatmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatmentTableViewController.swift; sourceTree = "<group>"; };
+		CF1486561BE693D900E92097 /* MedicationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationsTableViewController.swift; sourceTree = "<group>"; };
 		CF9F009A1BE2A9E000880D5E /* DiabetesTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9F009D1BE2A9E000880D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9F00A21BE2A9E000880D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +101,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF14864B1BE6928800E92097 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CF14864C1BE692BA00E92097 /* LabResultTableViewController.swift */,
+				CF14864E1BE6938E00E92097 /* ConditionReportTableViewController.swift */,
+				CF1486501BE693A300E92097 /* DietReportTableViewController.swift */,
+				CF1486521BE693B500E92097 /* DiagnosisTableViewController.swift */,
+				CF1486541BE693CB00E92097 /* TreatmentTableViewController.swift */,
+				CF1486561BE693D900E92097 /* MedicationsTableViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		CF9F00911BE2A9E000880D5E = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +152,14 @@
 		CF9F00B11BE2AB7F00880D5E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				CF1486451BE6894C00E92097 /* home-32.png */,
+				CF1486461BE6894C00E92097 /* user_shield_filled-32.png */,
+				CF1486431BE687B700E92097 /* medications.jpg */,
+				CF1486351BE6841B00E92097 /* condition_report.jpg */,
+				CF1486361BE6841B00E92097 /* diagnosis.png */,
+				CF1486371BE6841B00E92097 /* diet_report.png */,
+				CF1486381BE6841B00E92097 /* lab_results.jpeg */,
+				CF1486391BE6841B00E92097 /* treatment.jpg */,
 				CFFCE3371BE5088700285320 /* envelope.png */,
 				CFFCE3381BE5088700285320 /* settings.png */,
 				CFFF186B1BE407FD0009889B /* home.jpg */,
@@ -129,6 +180,8 @@
 		CFFF186A1BE3FFAB0009889B /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CF14864B1BE6928800E92097 /* Home */,
+				CF1486491BE68A8E00E92097 /* HomeViewController.swift */,
 			);
 			name = AfterLogin;
 			sourceTree = "<group>";
@@ -218,14 +271,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1486471BE6894C00E92097 /* home-32.png in Resources */,
 				CFFCE33A1BE5088700285320 /* settings.png in Resources */,
+				CF14863B1BE6841B00E92097 /* diagnosis.png in Resources */,
 				CF9F00B31BE2AB9600880D5E /* login_wallpaper.jpg in Resources */,
+				CF1486481BE6894C00E92097 /* user_shield_filled-32.png in Resources */,
 				CF9F00A81BE2A9E000880D5E /* LaunchScreen.storyboard in Resources */,
+				CF14863D1BE6841B00E92097 /* lab_results.jpeg in Resources */,
 				CF9F00A51BE2A9E000880D5E /* Assets.xcassets in Resources */,
 				CF9F00B01BE2AA1F00880D5E /* Podfile in Resources */,
+				CF14863E1BE6841B00E92097 /* treatment.jpg in Resources */,
+				CF14863A1BE6841B00E92097 /* condition_report.jpg in Resources */,
 				CFFF186C1BE407FD0009889B /* home.jpg in Resources */,
 				CFFCE3391BE5088700285320 /* envelope.png in Resources */,
 				CF9F00A31BE2A9E000880D5E /* Main.storyboard in Resources */,
+				CF1486441BE687B700E92097 /* medications.jpg in Resources */,
+				CF14863C1BE6841B00E92097 /* diet_report.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +345,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1486551BE693CB00E92097 /* TreatmentTableViewController.swift in Sources */,
+				CF14864A1BE68A8E00E92097 /* HomeViewController.swift in Sources */,
 				CFFF18701BE40C3D0009889B /* SignupViewController.swift in Sources */,
+				CF14864D1BE692BA00E92097 /* LabResultTableViewController.swift in Sources */,
 				CFFF186E1BE408230009889B /* LoginViewController.swift in Sources */,
 				CFFF18751BE45D780009889B /* UIViewController+SharedUIMethods.swift in Sources */,
+				CF1486571BE693D900E92097 /* MedicationsTableViewController.swift in Sources */,
+				CF1486531BE693B500E92097 /* DiagnosisTableViewController.swift in Sources */,
+				CF14864F1BE6938E00E92097 /* ConditionReportTableViewController.swift in Sources */,
 				CF9F009E1BE2A9E000880D5E /* AppDelegate.swift in Sources */,
+				CF1486511BE693A300E92097 /* DietReportTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
