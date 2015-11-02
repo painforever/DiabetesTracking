@@ -22,14 +22,16 @@ class LoginViewController: UIViewController {
     @IBAction func signinButtonAction(sender: AnyObject) {
         Alamofire.request(.POST, SERVER.BASE_URL.stringByAppendingString("sessions"), parameters: ["email":self.email.text!, "password": self.password.text!]).responseJSON{
             response in
-            if let JSON = response.result.value {
-                var result = JSON.valueForKey("result")
-                print("JSON: \(result!)")
+            if let jsonResult = response.result.value {
+                var uiTabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController
+                var ddd = UIApplication.sharedApplication().delegate
+                ddd?.window!?.rootViewController = uiTabBarController
+            }
+            else {
+                self.showAlert("Account error.", message: "Email or password is wrong!")
+                return
             }
         }
-//        var uiTabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController
-//        var ddd = UIApplication.sharedApplication().delegate
-//        ddd?.window!?.rootViewController = uiTabBarController
     }
     override func viewDidLoad() {
         super.viewDidLoad()
