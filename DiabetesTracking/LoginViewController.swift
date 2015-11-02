@@ -20,9 +20,16 @@ class LoginViewController: UIViewController {
         self.presentViewController(self.signViewController!, animated: true, completion: nil)
     }
     @IBAction func signinButtonAction(sender: AnyObject) {
-        var uiTabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController
-        var ddd = UIApplication.sharedApplication().delegate
-        ddd?.window!?.rootViewController = uiTabBarController
+        Alamofire.request(.POST, SERVER.BASE_URL.stringByAppendingString("sessions"), parameters: ["email":self.email.text!, "password": self.password.text!]).responseJSON{
+            response in
+            if let JSON = response.result.value {
+                var result = JSON.valueForKey("result")
+                print("JSON: \(result!)")
+            }
+        }
+//        var uiTabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController
+//        var ddd = UIApplication.sharedApplication().delegate
+//        ddd?.window!?.rootViewController = uiTabBarController
     }
     override func viewDidLoad() {
         super.viewDidLoad()

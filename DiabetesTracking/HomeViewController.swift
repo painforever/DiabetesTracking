@@ -25,13 +25,6 @@ class HomeViewController: UIViewController {
     var tapTreatment : UITapGestureRecognizer!
     var tapMedications : UITapGestureRecognizer!
     
-//    var labResultView : LabResultTableViewController?
-//    var conditionReportView: ConditionReportTableViewController?
-//    var dietReportView : DietReportTableViewController?
-//    var diagnosisView : DiagnosisTableViewController?
-//    var treatmentView : TreatmentTableViewController?
-//    var medicationsView : MedicationsTableViewController?
-    
     var labResultView : UIViewController?
     var conditionReportView: UIViewController?
     var dietReportView : UIViewController?
@@ -50,6 +43,7 @@ class HomeViewController: UIViewController {
     }
     
     func initControls() {
+        self.title = "Home";
         self.tapLabResult = UITapGestureRecognizer(target: self, action: Selector("tapLabResultsAction"))
         self.tapConditionReport = UITapGestureRecognizer(target: self, action: Selector("tapConditionReportAction"))
         self.tapDiagnosis = UITapGestureRecognizer(target: self, action: Selector("tapDiagnosisAction"))
