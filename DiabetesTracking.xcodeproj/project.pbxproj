@@ -24,6 +24,7 @@
 		CF1486571BE693D900E92097 /* MedicationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1486561BE693D900E92097 /* MedicationsTableViewController.swift */; };
 		CF65A7421BE7C4AD00AE2A46 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65A7411BE7C4AD00AE2A46 /* Manifest.swift */; };
 		CF65A7451BE7C4D700AE2A46 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65A7441BE7C4D700AE2A46 /* Constants.swift */; };
+		CF65A75B1BE8021700AE2A46 /* LabResultTypeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65A75A1BE8021700AE2A46 /* LabResultTypeTableView.swift */; };
 		CF9F009E1BE2A9E000880D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F009D1BE2A9E000880D5E /* AppDelegate.swift */; };
 		CF9F00A31BE2A9E000880D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00A11BE2A9E000880D5E /* Main.storyboard */; };
 		CF9F00A51BE2A9E000880D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00A41BE2A9E000880D5E /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		CF1486561BE693D900E92097 /* MedicationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationsTableViewController.swift; sourceTree = "<group>"; };
 		CF65A7411BE7C4AD00AE2A46 /* Manifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manifest.swift; sourceTree = "<group>"; };
 		CF65A7441BE7C4D700AE2A46 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF65A75A1BE8021700AE2A46 /* LabResultTypeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabResultTypeTableView.swift; sourceTree = "<group>"; };
 		CF9F009A1BE2A9E000880D5E /* DiabetesTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9F009D1BE2A9E000880D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9F00A21BE2A9E000880D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		CF14864B1BE6928800E92097 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CF65A7591BE801F300AE2A46 /* LabResult */,
 				CF14864C1BE692BA00E92097 /* LabResultTableViewController.swift */,
 				CF14864E1BE6938E00E92097 /* ConditionReportTableViewController.swift */,
 				CF1486501BE693A300E92097 /* DietReportTableViewController.swift */,
@@ -124,6 +127,14 @@
 				CF65A7441BE7C4D700AE2A46 /* Constants.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		CF65A7591BE801F300AE2A46 /* LabResult */ = {
+			isa = PBXGroup;
+			children = (
+				CF65A75A1BE8021700AE2A46 /* LabResultTypeTableView.swift */,
+			);
+			name = LabResult;
 			sourceTree = "<group>";
 		};
 		CF9F00911BE2A9E000880D5E = {
@@ -369,6 +380,7 @@
 				CF65A7451BE7C4D700AE2A46 /* Constants.swift in Sources */,
 				CF1486531BE693B500E92097 /* DiagnosisTableViewController.swift in Sources */,
 				CF65A7421BE7C4AD00AE2A46 /* Manifest.swift in Sources */,
+				CF65A75B1BE8021700AE2A46 /* LabResultTypeTableView.swift in Sources */,
 				CF14864F1BE6938E00E92097 /* ConditionReportTableViewController.swift in Sources */,
 				CF9F009E1BE2A9E000880D5E /* AppDelegate.swift in Sources */,
 				CF1486511BE693A300E92097 /* DietReportTableViewController.swift in Sources */,

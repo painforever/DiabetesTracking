@@ -23,6 +23,10 @@ class LoginViewController: UIViewController {
         Alamofire.request(.POST, SERVER.BASE_URL.stringByAppendingString("sessions"), parameters: ["email":self.email.text!, "password": self.password.text!]).responseJSON{
             response in
             if let jsonResult = response.result.value {
+                
+                LOCAL_STORAGE.userDefaults.setValue(jsonResult.valueForKey("user_id")!, forKey: "user_id")
+                LOCAL_STORAGE.userDefaults.setValue(jsonResult.valueForKey("patient_id")!, forKey: "patient_id")
+                
                 var uiTabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController
                 var ddd = UIApplication.sharedApplication().delegate
                 ddd?.window!?.rootViewController = uiTabBarController
@@ -48,15 +52,5 @@ class LoginViewController: UIViewController {
         self.email.leftView = self.setLeftViewForTextfields("envelope.png", containerScale: 50, imageIconScale: 24, textField: self.email)
         self.password.leftView = self.setLeftViewForTextfields("settings.png", containerScale: 50, imageIconScale: 24, textField: self.password)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
