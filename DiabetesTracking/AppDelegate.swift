@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if File.fileExistsByName(LOCAL_STORAGE.EMAIL) {
+            let localStorageArr: Array<String> = File.readFileByName(LOCAL_STORAGE.USER_DATA).componentsSeparatedByString(",")
+            LOCAL_STORAGE.userDefaults.setValue(localStorageArr[0], forKey: "user_id")
+            LOCAL_STORAGE.userDefaults.setValue(localStorageArr[1], forKey: "patient_id")
+            
+            var uiTabBarController = self.window?.rootViewController?.storyboard!.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController
+            var ddd = UIApplication.sharedApplication().delegate
+            ddd?.window!?.rootViewController = uiTabBarController
+        }
         return true
     }
 

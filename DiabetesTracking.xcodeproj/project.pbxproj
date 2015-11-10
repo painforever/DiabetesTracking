@@ -71,6 +71,7 @@
 		CF9F00A91BE2A9E000880D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9F00AF1BE2AA1F00880D5E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login_wallpaper.jpg; path = Images/login_wallpaper.jpg; sourceTree = "<group>"; };
+		CFE1420B1BF281900023E48C /* DiabetesTracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiabetesTracking-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFFCE3371BE5088700285320 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envelope.png; path = Images/leftViewIcons/envelope.png; sourceTree = "<group>"; };
 		CFFCE3381BE5088700285320 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Images/leftViewIcons/settings.png; sourceTree = "<group>"; };
 		CFFF186B1BE407FD0009889B /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home.jpg; path = Images/home.jpg; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 				CF9F009B1BE2A9E000880D5E /* Products */,
 				C2E57690670020447D259FDF /* Pods */,
 				B7CCEF48035D547761269FF0 /* Frameworks */,
+				CFE1420B1BF281900023E48C /* DiabetesTracking-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -501,10 +503,13 @@
 			baseConfigurationReference = D6EB677E82D0CD9836BC8DC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DiabetesTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EFA.DiabetesTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DiabetesTracking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -513,10 +518,12 @@
 			baseConfigurationReference = 73162DC1405246BB246F610A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DiabetesTracking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EFA.DiabetesTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DiabetesTracking-Bridging-Header.h";
 			};
 			name = Release;
 		};

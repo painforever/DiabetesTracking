@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
                 
                 LOCAL_STORAGE.userDefaults.setValue(jsonResult.valueForKey("user_id")!, forKey: "user_id")
                 LOCAL_STORAGE.userDefaults.setValue(jsonResult.valueForKey("patient_id")!, forKey: "patient_id")
-                
+                self.storeAccount()
                 var uiTabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("tabBarController") as? UITabBarController
                 var ddd = UIApplication.sharedApplication().delegate
                 ddd?.window!?.rootViewController = uiTabBarController
@@ -52,5 +52,13 @@ class LoginViewController: UIViewController {
         self.email.leftView = self.setLeftViewForTextfields("envelope.png", containerScale: 50, imageIconScale: 24, textField: self.email)
         self.password.leftView = self.setLeftViewForTextfields("settings.png", containerScale: 50, imageIconScale: 24, textField: self.password)
     }
-
+    
+    func storeAccount(){
+        if self.remember_me.on {
+            File.createFileByName(LOCAL_STORAGE.EMAIL);File.writeToFileByName(LOCAL_STORAGE.EMAIL, content: self.email.text!)
+            File.createFileByName(LOCAL_STORAGE.PASSWORD);File.writeToFileByName(LOCAL_STORAGE.PASSWORD, content: (self.password.text?.sha1())!)
+            let contentForUserData: String = String(format: "%d,%d", String(LOCAL_STORAGE.userDefaults.valueForKey("user_id")), String(LOCAL_STORAGE.userDefaults.valueForKey("patient_id")))
+            File.writeToFileByName(LOCAL_STORAGE.USER_DATA, content: contentForUserData)
+        }
+    }
 }

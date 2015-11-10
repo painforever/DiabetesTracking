@@ -14,4 +14,7 @@ struct SERVER {
 
 struct LOCAL_STORAGE{
     static var userDefaults = NSUserDefaults.standardUserDefaults()
+    static let EMAIL = "email.txt"
+    static let PASSWORD = "password.txt"
+    static let USER_DATA = "user_data.txt"
 }
