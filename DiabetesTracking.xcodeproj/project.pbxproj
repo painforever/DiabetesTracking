@@ -32,6 +32,7 @@
 		CF9F00A81BE2A9E000880D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00A61BE2A9E000880D5E /* LaunchScreen.storyboard */; };
 		CF9F00B01BE2AA1F00880D5E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00AF1BE2AA1F00880D5E /* Podfile */; };
 		CF9F00B31BE2AB9600880D5E /* login_wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */; };
+		CFE1420F1BF2CCB90023E48C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */; };
 		CFFCE3391BE5088700285320 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3371BE5088700285320 /* envelope.png */; };
 		CFFCE33A1BE5088700285320 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3381BE5088700285320 /* settings.png */; };
 		CFFF186C1BE407FD0009889B /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFFF186B1BE407FD0009889B /* home.jpg */; };
@@ -72,6 +73,7 @@
 		CF9F00AF1BE2AA1F00880D5E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login_wallpaper.jpg; path = Images/login_wallpaper.jpg; sourceTree = "<group>"; };
 		CFE1420B1BF281900023E48C /* DiabetesTracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiabetesTracking-Bridging-Header.h"; sourceTree = "<group>"; };
+		CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CFFCE3371BE5088700285320 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envelope.png; path = Images/leftViewIcons/envelope.png; sourceTree = "<group>"; };
 		CFFCE3381BE5088700285320 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Images/leftViewIcons/settings.png; sourceTree = "<group>"; };
 		CFFF186B1BE407FD0009889B /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = home.jpg; path = Images/home.jpg; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				CF14864B1BE6928800E92097 /* Home */,
 				CF1486491BE68A8E00E92097 /* HomeViewController.swift */,
+				CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */,
 			);
 			name = AfterLogin;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				CF65A7421BE7C4AD00AE2A46 /* Manifest.swift in Sources */,
 				CF03AD0C1BF24581008EAF06 /* File.swift in Sources */,
 				CF65A75B1BE8021700AE2A46 /* LabResultTypeTableView.swift in Sources */,
+				CFE1420F1BF2CCB90023E48C /* SettingsTableViewController.swift in Sources */,
 				CF14864F1BE6938E00E92097 /* ConditionReportTableViewController.swift in Sources */,
 				CF9F009E1BE2A9E000880D5E /* AppDelegate.swift in Sources */,
 				CF1486511BE693A300E92097 /* DietReportTableViewController.swift in Sources */,
