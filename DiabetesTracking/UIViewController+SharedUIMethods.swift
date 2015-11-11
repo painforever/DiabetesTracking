@@ -112,6 +112,11 @@ extension UIViewController: UITextFieldDelegate, UIPickerViewDelegate {
     func redirectTo(view: UIViewController) {
         self.navigationController?.pushViewController(view, animated: true)
     }
+    
+    func jumpByPresent (viewControllerID: String){
+        let viewController: UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier(viewControllerID))!
+        self.presentViewController(viewController, animated: true, completion: nil)
+    }
 }
 
 extension String {

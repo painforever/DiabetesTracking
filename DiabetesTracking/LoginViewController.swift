@@ -14,16 +14,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var remember_me: UISwitch!
-    var signViewController:UIViewController!
+    var signViewController: SignupViewController!
     @IBAction func signupButtonAction(sender: AnyObject) {
-        self.signViewController = self.storyboard?.instantiateViewControllerWithIdentifier("SignupViewController")
+        self.signViewController = self.storyboard?.instantiateViewControllerWithIdentifier("SignupViewController") as! SignupViewController
+        self.signViewController.parent = self
         self.presentViewController(self.signViewController!, animated: true, completion: nil)
     }
     @IBAction func signinButtonAction(sender: AnyObject) {
         Alamofire.request(.POST, SERVER.BASE_URL.stringByAppendingString("sessions"), parameters: ["email":self.email.text!, "password": self.password.text!]).responseJSON{
             response in
             if let jsonResult = response.result.value {
-                
                 LOCAL_STORAGE.userDefaults.setValue(jsonResult.valueForKey("user_id")!, forKey: "user_id")
                 LOCAL_STORAGE.userDefaults.setValue(jsonResult.valueForKey("patient_id")!, forKey: "patient_id")
                 self.storeAccount()
