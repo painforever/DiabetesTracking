@@ -32,6 +32,8 @@
 		CF9F00A81BE2A9E000880D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00A61BE2A9E000880D5E /* LaunchScreen.storyboard */; };
 		CF9F00B01BE2AA1F00880D5E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00AF1BE2AA1F00880D5E /* Podfile */; };
 		CF9F00B31BE2AB9600880D5E /* login_wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */; };
+		CFB66BF61BF7839A006F072B /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB66BF51BF7839A006F072B /* MedCell.swift */; };
+		CFB66BF91BF78D36006F072B /* NewMedicationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB66BF81BF78D36006F072B /* NewMedicationTableView.swift */; };
 		CFE1420F1BF2CCB90023E48C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */; };
 		CFFCE3391BE5088700285320 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3371BE5088700285320 /* envelope.png */; };
 		CFFCE33A1BE5088700285320 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3381BE5088700285320 /* settings.png */; };
@@ -72,6 +74,8 @@
 		CF9F00A91BE2A9E000880D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9F00AF1BE2AA1F00880D5E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = login_wallpaper.jpg; path = Images/login_wallpaper.jpg; sourceTree = "<group>"; };
+		CFB66BF51BF7839A006F072B /* MedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
+		CFB66BF81BF78D36006F072B /* NewMedicationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMedicationTableView.swift; sourceTree = "<group>"; };
 		CFE1420B1BF281900023E48C /* DiabetesTracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiabetesTracking-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CFFCE3371BE5088700285320 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envelope.png; path = Images/leftViewIcons/envelope.png; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		CF14864B1BE6928800E92097 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CFB66BF71BF78D18006F072B /* Medications */,
 				CF65A7591BE801F300AE2A46 /* LabResult */,
 				CF14864C1BE692BA00E92097 /* LabResultTableViewController.swift */,
 				CF14864E1BE6938E00E92097 /* ConditionReportTableViewController.swift */,
@@ -166,6 +171,7 @@
 		CF9F009C1BE2A9E000880D5E /* DiabetesTracking */ = {
 			isa = PBXGroup;
 			children = (
+				CFB66BF41BF7830E006F072B /* Cells */,
 				CFFF18711BE45AC00009889B /* Utils */,
 				CFFF186A1BE3FFAB0009889B /* AfterLogin */,
 				CFFF18691BE3FFA10009889B /* BeforeLogin */,
@@ -195,6 +201,22 @@
 				CF9F00B21BE2AB9600880D5E /* login_wallpaper.jpg */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		CFB66BF41BF7830E006F072B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFB66BF51BF7839A006F072B /* MedCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CFB66BF71BF78D18006F072B /* Medications */ = {
+			isa = PBXGroup;
+			children = (
+				CFB66BF81BF78D36006F072B /* NewMedicationTableView.swift */,
+			);
+			name = Medications;
 			sourceTree = "<group>";
 		};
 		CFFF18691BE3FFA10009889B /* BeforeLogin */ = {
@@ -378,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB66BF61BF7839A006F072B /* MedCell.swift in Sources */,
 				CF1486551BE693CB00E92097 /* TreatmentTableViewController.swift in Sources */,
 				CF14864A1BE68A8E00E92097 /* HomeViewController.swift in Sources */,
 				CFFF18701BE40C3D0009889B /* SignupViewController.swift in Sources */,
@@ -394,6 +417,7 @@
 				CF14864F1BE6938E00E92097 /* ConditionReportTableViewController.swift in Sources */,
 				CF9F009E1BE2A9E000880D5E /* AppDelegate.swift in Sources */,
 				CF1486511BE693A300E92097 /* DietReportTableViewController.swift in Sources */,
+				CFB66BF91BF78D36006F072B /* NewMedicationTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
