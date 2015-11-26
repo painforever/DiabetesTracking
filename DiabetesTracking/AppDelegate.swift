@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if File.fileExistsByName(LOCAL_STORAGE.EMAIL) {
             let localStorageArr: Array<String> = File.readFileByName(LOCAL_STORAGE.USER_DATA).componentsSeparatedByString(",")
+            //print("\(File.readFileByName(LOCAL_STORAGE.USER_DATA))")
             LOCAL_STORAGE.userDefaults.setValue(localStorageArr[0], forKey: "user_id")
             LOCAL_STORAGE.userDefaults.setValue(localStorageArr[1], forKey: "patient_id")
             

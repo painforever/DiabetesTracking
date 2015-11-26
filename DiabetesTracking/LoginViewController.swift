@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
         if self.remember_me.on {
             File.createFileByName(LOCAL_STORAGE.EMAIL);File.writeToFileByName(LOCAL_STORAGE.EMAIL, content: self.email.text!)
             File.createFileByName(LOCAL_STORAGE.PASSWORD);File.writeToFileByName(LOCAL_STORAGE.PASSWORD, content: (self.password.text?.sha1())!)
-            let contentForUserData: String = String(format: "%d,%d", String(LOCAL_STORAGE.userDefaults.valueForKey("user_id")), String(LOCAL_STORAGE.userDefaults.valueForKey("patient_id")))
+            let contentForUserData: String = String(format: "%@,%@", String(LOCAL_STORAGE.userDefaults.valueForKey("user_id")!), String(LOCAL_STORAGE.userDefaults.valueForKey("patient_id")!))
             File.writeToFileByName(LOCAL_STORAGE.USER_DATA, content: contentForUserData)
         }
     }

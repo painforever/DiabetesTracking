@@ -117,6 +117,12 @@ extension UIViewController: UITextFieldDelegate, UIPickerViewDelegate {
         let viewController: UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier(viewControllerID))!
         self.presentViewController(viewController, animated: true, completion: nil)
     }
+    
+    func showStringWithNilInView(obj: AnyObject) -> String {
+        let str = String(obj)
+        if str.isEmpty {return ""}
+        else {return str}
+    }
 }
 
 extension String {
@@ -127,4 +133,10 @@ extension String {
         let hexBytes = digest.map { String(format: "%02hhx", $0) }
         return hexBytes.joinWithSeparator("")
     }
+    
+    func showWithNil() -> String! {
+        if self.isEmpty {return ""}
+        else {return self}
+    }
 }
+
