@@ -16,7 +16,11 @@ class MedicationsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Alamofire.request(.GET, SERVER.BASE_URL.stringByAppendingString("rxs"), parameters: ["patient_id":LOCAL_STORAGE.userDefaults.valueForKey("patient_id")!]).responseJSON{response in
-            
+            if let jsonResult = response.result.value {
+                self.table_data = jsonResult as! Array
+                self.tableView.reloadData()
+                print(jsonResult)
+            }
         }
     }
     @IBAction func addMedicationButtonAction(sender: AnyObject) {

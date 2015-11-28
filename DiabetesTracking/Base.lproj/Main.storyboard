@@ -592,6 +592,9 @@
                                                     <state key="normal" title="Add">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="addButtonAction:" destination="kHS-Xg-yFm" eventType="touchUpInside" id="yj9-vy-4cX"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -607,6 +610,14 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addBubtton" destination="MPt-Te-zL0" id="l19-0E-ahP"/>
+                        <outlet property="dosage" destination="utV-mq-JtI" id="cnQ-Of-Zb2"/>
+                        <outlet property="drug_name" destination="VXY-om-LYL" id="Cbb-3t-AQF"/>
+                        <outlet property="end_date" destination="P5Q-6D-9yk" id="mdi-tx-C7i"/>
+                        <outlet property="route_name" destination="bQr-uN-fl8" id="Wfz-uz-reF"/>
+                        <outlet property="start_date" destination="i6q-D8-nvd" id="evW-f9-nCx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JvU-fC-piY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
