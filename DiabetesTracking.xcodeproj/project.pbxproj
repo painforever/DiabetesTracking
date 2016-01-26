@@ -35,6 +35,7 @@
 		CFB342591C075633002DAD88 /* LabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB342581C075633002DAD88 /* LabCell.swift */; };
 		CFB66BF61BF7839A006F072B /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB66BF51BF7839A006F072B /* MedCell.swift */; };
 		CFB66BF91BF78D36006F072B /* NewMedicationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB66BF81BF78D36006F072B /* NewMedicationTableView.swift */; };
+		CFDA755D1C57036000C3E79E /* ChangePasswordFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA755C1C57036000C3E79E /* ChangePasswordFormViewController.swift */; };
 		CFE1420F1BF2CCB90023E48C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */; };
 		CFFCE3391BE5088700285320 /* envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3371BE5088700285320 /* envelope.png */; };
 		CFFCE33A1BE5088700285320 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE3381BE5088700285320 /* settings.png */; };
@@ -78,6 +79,7 @@
 		CFB342581C075633002DAD88 /* LabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabCell.swift; sourceTree = "<group>"; };
 		CFB66BF51BF7839A006F072B /* MedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
 		CFB66BF81BF78D36006F072B /* NewMedicationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMedicationTableView.swift; sourceTree = "<group>"; };
+		CFDA755C1C57036000C3E79E /* ChangePasswordFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordFormViewController.swift; sourceTree = "<group>"; };
 		CFE1420B1BF281900023E48C /* DiabetesTracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiabetesTracking-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		CFFCE3371BE5088700285320 /* envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = envelope.png; path = Images/leftViewIcons/envelope.png; sourceTree = "<group>"; };
@@ -222,6 +224,14 @@
 			name = Medications;
 			sourceTree = "<group>";
 		};
+		CFDA755B1C57034400C3E79E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA755C1C57036000C3E79E /* ChangePasswordFormViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		CFFF18691BE3FFA10009889B /* BeforeLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +244,7 @@
 		CFFF186A1BE3FFAB0009889B /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				CFDA755B1C57034400C3E79E /* Settings */,
 				CF14864B1BE6928800E92097 /* Home */,
 				CF1486491BE68A8E00E92097 /* HomeViewController.swift */,
 				CFE1420E1BF2CCB90023E48C /* SettingsTableViewController.swift */,
@@ -416,6 +427,7 @@
 				CF65A7421BE7C4AD00AE2A46 /* Manifest.swift in Sources */,
 				CF03AD0C1BF24581008EAF06 /* File.swift in Sources */,
 				CF65A75B1BE8021700AE2A46 /* LabResultTypeTableView.swift in Sources */,
+				CFDA755D1C57036000C3E79E /* ChangePasswordFormViewController.swift in Sources */,
 				CFE1420F1BF2CCB90023E48C /* SettingsTableViewController.swift in Sources */,
 				CF14864F1BE6938E00E92097 /* ConditionReportTableViewController.swift in Sources */,
 				CFB342591C075633002DAD88 /* LabCell.swift in Sources */,
