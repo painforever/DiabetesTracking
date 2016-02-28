@@ -9,6 +9,7 @@
 
 import UIKit
 import Foundation
+import SwiftyJSON
 
 extension UIViewController: UITextFieldDelegate, UIPickerViewDelegate {
     func showAlert(title: String, message: String) {
@@ -17,6 +18,13 @@ extension UIViewController: UITextFieldDelegate, UIPickerViewDelegate {
         alert.message = message
         alert.addButtonWithTitle("OK")
         alert.show()
+    }
+    
+    func convertSwitcherToString(switcher: UISwitch) -> String {
+        if switcher.on {
+            return "yes"
+        }
+        else{return "no"}
     }
     
     func trim(str: String) -> String {
@@ -118,10 +126,32 @@ extension UIViewController: UITextFieldDelegate, UIPickerViewDelegate {
         self.presentViewController(viewController, animated: true, completion: nil)
     }
     
+    func jumpByNavi (viewControllerID: String){
+        let vc : UIViewController = (self.storyboard?.instantiateViewControllerWithIdentifier(viewControllerID))!
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func showStringWithNilInView(obj: AnyObject) -> String {
         let str = String(obj)
         if str.isEmpty {return ""}
         else {return str}
+    }
+    
+    func jsonSwitcherArray(switchers: Array<UISwitch>, labels: Array<UILabel>) -> String {
+        if switchers.count != labels.count {
+            return "Parameters are wrong!"
+        }
+        var res : [Dictionary<String, String>]! = []
+        do {
+            for(index , element) in labels.enumerate() {
+                res.append([labels[index].text! : convertSwitcherToString(switchers[index])])
+            }
+            let jsonData = try NSJSONSerialization.dataWithJSONObject(res, options: NSJSONWritingOptions.PrettyPrinted)
+            return NSString(data: jsonData, encoding: NSUTF8StringEncoding) as String!
+        }catch let error as NSError{
+            print(error.description)
+            return "json errer"
+        }
     }
 }
 

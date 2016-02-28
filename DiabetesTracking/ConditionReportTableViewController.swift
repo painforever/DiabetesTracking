@@ -9,5 +9,15 @@
 import UIKit
 
 class ConditionReportTableViewController: UITableViewController {
-
+    
+    @IBOutlet var addConfitionReportBtn: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func addConditionReportAction(sender: AnyObject) {
+        self.jumpByNavi("NewConditionReportTableView")
+    }
+    
 }
