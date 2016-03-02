@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A69E9B51C878569000CD29C /* TreatmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A69E9B41C878569000CD29C /* TreatmentCell.swift */; };
 		CF03AD0C1BF24581008EAF06 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF03AD0B1BF24581008EAF06 /* File.swift */; };
 		CF14863A1BE6841B00E92097 /* condition_report.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF1486351BE6841B00E92097 /* condition_report.jpg */; };
 		CF14863B1BE6841B00E92097 /* diagnosis.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1486361BE6841B00E92097 /* diagnosis.png */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		46E6C7C465E3819C41AC8F15 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73162DC1405246BB246F610A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9A69E9B41C878569000CD29C /* TreatmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreatmentCell.swift; sourceTree = "<group>"; };
 		CF03AD0B1BF24581008EAF06 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CF1486351BE6841B00E92097 /* condition_report.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = condition_report.jpg; path = Images/condition_report.jpg; sourceTree = "<group>"; };
 		CF1486361BE6841B00E92097 /* diagnosis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diagnosis.png; path = Images/diagnosis.png; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				CFB66BF51BF7839A006F072B /* MedCell.swift */,
 				CFB342581C075633002DAD88 /* LabCell.swift */,
 				CF916DE11C86A2BE00376967 /* ConditionCell.swift */,
+				9A69E9B41C878569000CD29C /* TreatmentCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				CF1486531BE693B500E92097 /* DiagnosisTableViewController.swift in Sources */,
 				CF65A7421BE7C4AD00AE2A46 /* Manifest.swift in Sources */,
 				CF03AD0C1BF24581008EAF06 /* File.swift in Sources */,
+				9A69E9B51C878569000CD29C /* TreatmentCell.swift in Sources */,
 				CF65A75B1BE8021700AE2A46 /* LabResultTypeTableView.swift in Sources */,
 				CFDA755D1C57036000C3E79E /* ChangePasswordFormViewController.swift in Sources */,
 				CFE1420F1BF2CCB90023E48C /* SettingsTableViewController.swift in Sources */,
