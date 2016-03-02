@@ -11,7 +11,7 @@ import Alamofire
 
 class LabResultTableViewController: UITableViewController {
     var newLabForm : UIViewController?
-    var table_data : NSArray!
+    var table_data : [[String:AnyObject]]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +19,8 @@ class LabResultTableViewController: UITableViewController {
         Alamofire.request(.GET, SERVER.BASE_URL.stringByAppendingString("labs") ,parameters: ["patient_id": LOCAL_STORAGE.userDefaults.valueForKey("patient_id")!]).responseJSON{
             response in
             if let jsonResult = response.result.value{
-                self.table_data = jsonResult as! NSArray
+                self.table_data = jsonResult as! [[String : AnyObject]]
                 self.tableView.reloadData()
-                print("success!")
-                print(self.table_data)
             }
         }
     }
@@ -37,11 +35,10 @@ class LabResultTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! LabCell
         if self.table_data != nil {
             let row_data = self.table_data[indexPath.row]
-            cell.test_type.text = String(format: "Type %@", String(row_data["test_type"]!!).showWithNil())
-            cell.test_date.text = String(format: "Date: %@", String(row_data["test_date"]!!).showWithNil())
-            cell.result.text = String(format: "Result: %@", String(row_data["result"]!!).showWithNil())
+            cell.test_type.text = "Type \(row_data["test_type"] ?? "")"
+            cell.test_date.text = "Date: \(row_data["test_date"] ?? "")"
+            cell.result.text = "Result: \(row_data["result"] ?? "")"
         }
-        
         return cell
     }
     
